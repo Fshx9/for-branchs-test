@@ -8,8 +8,8 @@ html{
   
 
   
-  fieldset{
-    border: none;
+  figure{
+    margin: 0;
   }
 
 
@@ -348,11 +348,68 @@ img{
 
 }
 
-
-.places-card places-card-size-lg{
-  
+.places-card{
+  position: relative;
+  overflow: hidden;
 }
 
+
+
+.places-cards ::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+.places-cards :hover .places-card-pic{
+  transform: scale(1.05);
+
+}
+
+.places-card-title{
+font-size: 50px;
+color: white;
+line-height: 60px;
+position: absolute;
+bottom: 27px;
+left: 29px;
+z-index: 3;
+
+
+
+}
+
+
+.places-card places-card-size-lg{
+
+}
+
+.places-card-size-lg{
+  grid-column: span  3;
+}
+
+.places-card-pic{
+   height: 354px;
+   object-fit: cover;
+   width: 100%;
+   transition: 0.15s;
+}
+
+.places-cards-title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
 
 /* places end */
 

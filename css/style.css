@@ -135,6 +135,7 @@ img{
     background: url(../img/Hero.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 223px;
 }
 
 .intro-title{
@@ -314,6 +315,11 @@ img{
 
 /* places start*/
 
+.places{
+  margin-bottom: 130px ;
+}
+
+
 .places-caption{
   display: flex;
   flex-wrap: wrap;
@@ -395,12 +401,24 @@ z-index: 3;
   grid-column: span  3;
 }
 
+.places-card-size-sm{
+  grid-column: span  2;
+}
+
 .places-card-pic{
-   height: 354px;
-   object-fit: cover;
    width: 100%;
    transition: 0.15s;
 }
+
+.places-card-pic-size-lg{
+  height: 354px;
+  object-fit: cover;
+}
+.places-card-pic-size-sm{
+  height: 283px;
+  object-fit: cover;
+}
+
 
 .places-card-link{
   position: absolute;

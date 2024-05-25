@@ -402,7 +402,7 @@ z-index: 3;
    transition: 0.15s;
 }
 
-.places-cards-title{
+.places-card-link{
   position: absolute;
   top: 0;
   left: 0;
